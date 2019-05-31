@@ -1,0 +1,16 @@
+C:\Users\TOSHIBA\source\repos\Crossfit\Login\Login\bin\Debug\Login.exe.config
+C:\Users\TOSHIBA\source\repos\Crossfit\Login\Login\bin\Debug\Login.exe
+C:\Users\TOSHIBA\source\repos\Crossfit\Login\Login\bin\Debug\Login.pdb
+C:\Users\TOSHIBA\source\repos\Crossfit\Login\Login\bin\Debug\Login.xml
+C:\Users\TOSHIBA\source\repos\Crossfit\Login\Login\obj\Debug\Login.vbprojAssemblyReference.cache
+C:\Users\TOSHIBA\source\repos\Crossfit\Login\Login\obj\Debug\Login.Form1.resources
+C:\Users\TOSHIBA\source\repos\Crossfit\Login\Login\obj\Debug\Login.Resources.resources
+C:\Users\TOSHIBA\source\repos\Crossfit\Login\Login\obj\Debug\Login.vbproj.GenerateResource.cache
+C:\Users\TOSHIBA\source\repos\Crossfit\Login\Login\obj\Debug\Login.vbproj.CoreCompileInputs.cache
+C:\Users\TOSHIBA\source\repos\Crossfit\Login\Login\obj\Debug\Login.exe
+C:\Users\TOSHIBA\source\repos\Crossfit\Login\Login\obj\Debug\Login.xml
+C:\Users\TOSHIBA\source\repos\Crossfit\Login\Login\obj\Debug\Login.pdb
+C:\Users\TOSHIBA\source\repos\Crossfit\Login\Login\bin\Debug\MySql.Data.dll
+C:\Users\TOSHIBA\source\repos\Crossfit\Login\Login\bin\Debug\Google.Protobuf.dll
+C:\Users\TOSHIBA\source\repos\Crossfit\Login\Login\bin\Debug\MySql.Data.xml
+C:\Users\TOSHIBA\source\repos\Crossfit\Login\Login\obj\Debug\Login.vbproj.CopyComplete
