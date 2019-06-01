@@ -107,7 +107,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Tusername)
         Me.Controls.Add(Me.PictureBox1)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "Login"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

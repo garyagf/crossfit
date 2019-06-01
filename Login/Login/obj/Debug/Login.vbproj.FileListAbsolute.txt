@@ -45,3 +45,4 @@ C:\Users\TOSHIBA\Desktop\crossfit\crossfit\Login\Login\bin\Debug\Interop.WMPLib.
 C:\Users\TOSHIBA\Desktop\crossfit\crossfit\Login\Login\bin\Debug\AxInterop.WMPLib.dll
 C:\Users\TOSHIBA\Desktop\crossfit\crossfit\Login\Login\obj\Debug\Interop.WMPLib.dll
 C:\Users\TOSHIBA\Desktop\crossfit\crossfit\Login\Login\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\TOSHIBA\Desktop\crossfit\crossfit\Login\Login\obj\Debug\Login.Raking.resources

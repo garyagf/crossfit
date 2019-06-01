@@ -32,6 +32,7 @@ Partial Class FORM_USER
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Tiniciar = New System.Windows.Forms.Button()
         Me.Tstop = New System.Windows.Forms.Button()
+        Me.Traking = New System.Windows.Forms.Button()
         CType(Me.AxWindowsMediaPlayer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -104,11 +105,21 @@ Partial Class FORM_USER
         Me.Tstop.Text = "Stop"
         Me.Tstop.UseVisualStyleBackColor = True
         '
+        'Traking
+        '
+        Me.Traking.Location = New System.Drawing.Point(638, 386)
+        Me.Traking.Name = "Traking"
+        Me.Traking.Size = New System.Drawing.Size(75, 23)
+        Me.Traking.TabIndex = 7
+        Me.Traking.Text = "Raking"
+        Me.Traking.UseVisualStyleBackColor = True
+        '
         'FORM_USER
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Traking)
         Me.Controls.Add(Me.Tstop)
         Me.Controls.Add(Me.Tiniciar)
         Me.Controls.Add(Me.Tseg)
@@ -117,7 +128,7 @@ Partial Class FORM_USER
         Me.Controls.Add(Me.AxWindowsMediaPlayer1)
         Me.Controls.Add(Me.Label1)
         Me.Name = "FORM_USER"
-        Me.Text = "FORM_USER"
+        Me.Text = "Usuario"
         CType(Me.AxWindowsMediaPlayer1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -132,4 +143,5 @@ Partial Class FORM_USER
     Friend WithEvents Timer1 As Timer
     Friend WithEvents Tiniciar As Button
     Friend WithEvents Tstop As Button
+    Friend WithEvents Traking As Button
 End Class

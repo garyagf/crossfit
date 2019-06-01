@@ -84,6 +84,12 @@
     <Compile Include="dbconexion\FORM_USER.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="dbconexion\Raking.Designer.vb">
+      <DependentUpon>Raking.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dbconexion\Raking.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,9 @@
   <ItemGroup>
     <EmbeddedResource Include="dbconexion\FORM_USER.resx">
       <DependentUpon>FORM_USER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dbconexion\Raking.resx">
+      <DependentUpon>Raking.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>

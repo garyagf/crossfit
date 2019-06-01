@@ -7,6 +7,9 @@ Public Class FORM_USER
     Dim myconectcion As New DTconexion
     Dim objdatapter As MySqlDataAdapter
     Dim dtable As New DataTable
+    Dim user As String
+    Dim Puntos%
+    Dim punto%
 #End Region
 
     Private Sub FORM_USER_Disposed(sender As Object, e As EventArgs) Handles Me.Disposed
@@ -15,10 +18,10 @@ Public Class FORM_USER
     End Sub
 
     Private Sub FORM_USER_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim user As String
         user = Form1.Tusername.Text
         'Called the username'
         Label1.Text = "Usuario: " & user
+        Puntos = 10000
 
     End Sub
 
@@ -39,27 +42,56 @@ Public Class FORM_USER
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+
+
         Tseg.Text += 1
         If Tseg.Text = "60" Then
             Tmin.Text += 1
             Tseg.Text = "00"
+            Puntos -= 1
+
         End If
         If Tmin.Text = "60" Then
             Thora.Text += 1
             Tmin.Text = "00"
+
         End If
 
 
     End Sub
 
     Private Sub Tstop_Click(sender As Object, e As EventArgs) Handles Tstop.Click
+
         Timer1.Stop()
-        objdatapter = New MySqlDataAdapter("INSERT INTO tests(name,start_at,end_at)VALUES('Test 1',' " & Thora.Text & ":" & Tmin.Text & ":" & Tseg.Text & "',' 10:00:00 ')", myconectcion.open())
+        'user = Form1.Tusername.Text'
+        objdatapter = New MySqlDataAdapter(
+            "UPDATE RANKING 
+            SET
+            FECHA = sysdate(),
+            TIEMPO = '" & Thora.Text & " :" & Thora.Text & ":" & Tseg.Text & "',
+            PUNTOS = " & Puntos & "
+           WHERE ID_RAKING = (select ID_USUARIO from LOGIN where NOMBRE='" & user & "')",
+            myconectcion.open())
+
+        'objdatapter = New MySqlDataAdapter("INSERT INTO tests(name,start_at,end_at)VALUES('Test 1',' " & Thora.Text & ":" & Tmin.Text & ":" & Tseg.Text & "',' 10:00:00 ')", myconectcion.open())'
+
         dtable.Clear()
         objdatapter.Fill(dtable)
         myconectcion.close()
+        user = ""
         Thora.Text = ""
         Tmin.Text = ""
         Tseg.Text = ""
+
+        punto = 0
+        Tseg.Text = 0
+        Tmin.Text = 0
+        Thora.Text = 0
+    End Sub
+
+    Private Sub Traking_Click(sender As Object, e As EventArgs) Handles Traking.Click
+        Dim traing As New Raking
+        traing.Show()
+        ' Me.Hide()'
     End Sub
 End Class
