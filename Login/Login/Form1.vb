@@ -18,7 +18,7 @@ Public Class Form1
 
 
     Private Sub BTlogin_Click(sender As Object, e As EventArgs) Handles BTlogin.Click
-        objdatapter = New MySqlDataAdapter("select NOMBRE, PASSWORD FROM LOGIN where  NOMBRE='" & Tusername.Text & "'and PASSWORD='" & Tpassword.Text & "'", myconectcion.open)
+        objdatapter = New MySqlDataAdapter("select NOMBRE, PASSWORD, ID_USUARIO ID FROM LOGIN where  NOMBRE='" & Tusername.Text & "'and PASSWORD='" & Tpassword.Text & "'", myconectcion.open)
         dtable.Clear()
         objdatapter.Fill(dtable)
         If dtable.Rows.Count = Nothing Then

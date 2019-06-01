@@ -1,4 +1,6 @@
-﻿Imports MySql.Data.MySqlClient
+﻿Imports System.Data.SqlClient
+Imports Login
+Imports MySql.Data.MySqlClient
 Public Class DTconexion
     Dim Conect As New MySqlConnection("server='remotemysql.com'; uid='ozbauw0ZKi'; pwd='hKmJaElvb9'; database='ozbauw0ZKi';port='3306'")
     Public Function open() As MySqlConnection
@@ -25,5 +27,8 @@ Public Class DTconexion
 
     End Function
 
+    Public Shared Widening Operator CType(v As DTconexion) As SqlConnection
+        Throw New NotImplementedException()
+    End Operator
 End Class
 
